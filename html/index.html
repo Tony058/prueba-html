@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es-NIC">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lobotomy Corporation</title>
+    <link rel="stylesheet" href="styles.css">
+</head> 
+<body>
+
+    <div class="contenedor">
+        <h1>Bienvenido a Lobotomy Corporation</h1>
+         <p> <i>  En los siguientes botones podras ver los empleados que trabajan en el sector de bienestar </i>
+        </p>
+       
+                <a href="#" class="boton-redireccion" onclick="mostrarempleado('A');removerTitulo();">Axel</a>
+                <a href="#" class="boton-redireccion" onclick="mostrarempleado('B');removerTitulo();">Jared</a>
+                <a href="#" class="boton-redireccion" onclick="mostrarempleado('C');removerTitulo();">Anthony</a>
+                <a href="#" class="boton-redireccion" onclick="mostrarempleado('D');removerTitulo();">David</a>
+                <a href="#" class="boton-redireccion" onclick="mostrarempleado('E');removerTitulo();">Ashner</a>
+
+            <div id="info-empleado">
+
+            </div>
+            <img id="foto-empleado" src="" width="200">
+
+    </div>
+
+    <script>
+function removerTitulo() {
+    var h1 = document.querySelector('h1');
+    if (h1) {
+        h1.remove();
+    }
+}
+
+function mostrarempleado(letra){
+
+let info = document.getElementById("info-empleado");
+let foto = document.getElementById("foto-empleado"); 
+
+if(letra == "A"){
+info.innerHTML =`
+<br><br>Soy Axel, una persona que estudia ingeniería en sistemas soy muy introvertido <br>y me gusta más estar solo, los pocos amigos que tengo ya saben eso <br>no me gusta salir de mi casa solo voy a la universidad de día <br>Trato de estudiar todos los días aunque se me dificulta <br>por mi trastorno de déficit de atención o llamado tdah <br>nunca lo han tratado y trato de sobrevivir yo solo con ello.<br><br>
+<img src="Ax.jpg" width="200" alt="Foto de Axel"><br><br>
+<ul>
+    <li> jugar videojuegos </li>
+    <li> comer</li>
+    <li> cocinar</li>
+    <li>escuchar música</li>
+</ul>
+`;
+foto.src="";
+
+}
+
+else if(letra == "B"){
+info.innerHTML =`
+Soy Jared, el presidente de Sistemas y no hay mucho que decir de mi,<br> soy algo tímido, no me gustan las fiestas y salgo poco de mi casa. <br>Estaba pensando en empezar a hacer ejercicio pero no tengo mucho tiempo, <br>probablemente inicie en las vacaciones intersemestrales <br><br>
+<img src="Ja.jpg" width="200" alt="Foto de Jared"><br><br>
+<ul>
+    <li> Suelo jugar videojuegos en mi tiempo libre </li>
+    <li> Practico y juego ajedrez de vez en cuando </li>
+    <li> Salgo a correr cuando tengo tiempo </li>
+    <li> Leo de todo </li>
+</ul>
+`;
+foto.src="";
+}
+
+else if(letra == "C"){
+info.innerHTML =`
+Soy Anthony, un estudiante de la UNAN-León CUR Somoto, <br> realmente no hay mucho que decir, soy alguien introvertido y salgo poco de casa. <br> Estoy pensando en concluir mis estudios y poder tener una vida estable y tranquila<br><br>
+<img src="An.jpg" width="200" alt="Foto de Anthony"><br><br>
+<ul>
+    <li> Suelo jugar o dibujo en mis tiempos libres </li>
+    <li> juego ajedrez de vez en cuando </li>
+    <li> Leo de vez en cuando libros digitales y físicos </li>
+    <li> me gustan las caminatas largas </li>
+</ul>
+`;
+foto.src="";
+}
+
+else if(letra == "D"){
+info.innerHTML =`
+Soy David, el vicepresidente de sistemas y coordinador del mov.deportivo. <br>Hay cosas que quizás sí les guste saber, soy algo penoso al comienzo, <br>pero cuando me hablas verás que soy diferente a lo que aparento. <br> Me puse a pensar en cosas que debo cambiar de mí mismo,<br> las cuales voy mirando con tranquilidad y la he pasado de maravilla en estos días...<br><br>
+<img src="Da.jpg" width="200" alt="Foto de David"><br><br>
+<ul>
+    <li> Me gusta jugar videojuegos </li>
+    <li> Me gusta hablar bastante con personas de mi entorno </li>
+    <li> Me encantan los deportes</li>
+    <li>Me gusta escuchar música y cocinar</li>
+</ul>
+`;
+foto.src="";
+}
+
+else if(letra == "E"){
+info.innerHTML =`
+Soy Ashner, un estudiante de ingeniería en sistemas y tengo mucho que tienen que saber de mí.<br> Soy alguien sentimental y social y soy mucho de salir de casa <br> Estaba pensando en meterme en alguna liga de fútbol,<br> pero económicamente me sale muy caro y pues me quiero meter a trabajar en vacaciones <br><br>
+<img src="As.jpg" width="200" alt="Foto de Ashner"><br><br>
+<ul>
+    <li> me gusta mucho jugar fútbol </li>
+    <li> me gusta jugar voleibol  </li>
+    <li> me encanta jugar videojuegos </li>
+    <li>y me gusta mucho el ajedrez</li>
+</ul>
+`;
+foto.src="";
+}
+
+}
+
+</script>
+</body>
+</html>
